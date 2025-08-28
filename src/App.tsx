@@ -8,12 +8,8 @@ const CONFIG = {
   priceTo: 129.9,
   checkoutUrl: 'https://entrega.logzz.com.br/pay/memxl5dmm/1-kit-com-6-facas-promocao',
   whatsappUrl: 'https://wa.me/5541998798091?text=Ol%C3%A1!%20Quero%20agendar%20a%20entrega%20do%20Kit%20de%20Facas%20(pague%20na%20entrega).',
-  heroImage: 'https://drive.google.com/uc?export=view&id=18dAG94MswljyW0se3wDfYWts7PXgZi7K',
-  gallery: [
-    'https://drive.google.com/uc?export=view&id=18dAG94MswljyW0se3wDfYWts7PXgZi7K',
-    'https://drive.google.com/uc?export=view&id=18dAG94MswljyW0se3wDfYWts7PXgZi7K',
-    'https://drive.google.com/uc?export=view&id=18dAG94MswljyW0se3wDfYWts7PXgZi7K',
-  ],
+  heroImage: '/hero.jpg',
+  gallery: [],
 } as const
 
 function formatHMS(ms:number){ const x=Math.max(0,ms); const h=Math.floor(x/3_600_000); const m=Math.floor((x%3_600_000)/60_000); const s=Math.floor((x%60_000)/1_000); return [h,m,s].map(n=>String(n).padStart(2,'0')) }
